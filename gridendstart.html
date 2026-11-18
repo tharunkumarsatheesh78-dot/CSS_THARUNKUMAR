@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns:auto auto auto;
+            gap: 5px;
+            background-color: lightblue;
+            padding: 5px;
+        }
+        .container div{
+            background-color: #f1f1f1;
+            text-align:center;
+            padding:10px;
+            font-size:30px;
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+<h1>The grid-column-start and grid-column-end properties</h1>
+<p>Let the first item start at columns-line 1, and end at columns-line 3:</p>
+
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2  </div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    
+</body>
+</html>
